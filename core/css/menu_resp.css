@@ -1,0 +1,253 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+/*PADRÃO*/
+
+@font-face {
+    font-family: "poppins-light";
+    src: url('Poppins-Light.ttf');
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+nav {
+    margin: 30px auto;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+
+.fa-chevron-down {
+    font-size: 9pt;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+nav label {
+    content: "";
+}
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    font-size: 13pt;
+    line-height: 13pt;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 15px;
+    font-family: 'poppins-light';
+}
+
+
+/*MENU*/
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: block;
+    float: none;
+}
+
+@media screen and (min-width: 640px) {
+    nav ul li:nth-child(1) {
+        width: 20%;
+    }
+    nav ul li:nth-child(2) {
+        width: 20%;
+    }
+    nav ul li:nth-child(3) {
+        width: 30%;
+    }
+    nav ul li:nth-child(4) {
+        width: 13%;
+    }
+}
+
+nav ul li {
+    float: right;
+    text-align: center;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 13px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    font-family: 'poppins-regular';
+}
+
+nav li img {
+    margin-bottom: 6px;
+}
+
+nav ul li a {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #d2ad5b
+}
+
+nav ul li:hover {
+    /* border-bottom: 1px solid #d2ad5b; */
+    color: #d2ad5b;
+    background-image: url(../imagens/risco.png);
+    background-size: contain;
+}
+
+
+/*SUBMENU*/
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    z-index: 99999999;
+    left: -65px;
+    margin-top: 0px;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 260px !important;
+    float: none;
+    display: list-item;
+    padding: 0px;
+    margin: 0px !important;
+    background-color: #fff !important;
+    text-align: left;
+    border: none;
+    color: #141f35 !important;
+    font-size: 11pt !important;
+    height: auto;
+    padding: 15px;
+}
+
+nav ul li ul a {
+    padding: 0px;
+}
+
+nav ul li ul li:hover {
+    background: #d0d0d0 !important;
+    border: none;
+}
+
+nav ul li ul li img {
+    margin: 0px;
+}
+
+nav ul li ul li:hover a {
+    color: #fff
+}
+
+nav ul li ul li a {
+    color: #141f35 !important;
+    text-align: left !important;
+}
+
+@media screen and (max-width: 640px) {
+    nav ul {
+        width: 92%;
+        position: absolute;
+        z-index: 999999999999999;
+    }
+    [id^=drop]:checked+ul {
+        display: block;
+    }
+    .barras {
+        float: right;
+        margin-top: -20px;
+    }
+    nav ul li:hover {
+        background-image: none;
+    }
+    .barras:hover {
+        background: none
+    }
+    .barras i {
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        margin-right: 0px;
+    }
+    .toggle+a,
+    .menu_resp {
+        display: none;
+    }
+    .toggle {
+        display: block;
+        font-size: 11pt;
+        text-decoration: none;
+        border: none;
+        text-align: left;
+        height: auto;
+        line-height: 12pt;
+    }
+    .toggle a:hover {
+        color: #fff;
+    }
+    /*MENU*/
+    nav {
+        margin: 15px 0;
+        border-radius: 0;
+    }
+    nav .submenu {
+        color: #141f35;
+        text-align: left;
+    }
+    nav ul li {
+        display: block;
+        background: #ffff;
+        width: 100%;
+        padding: 15px 30px 10px 20px;
+        border: 1px solid #141f35;
+        height: auto;
+        margin: 0px;
+        background-image: none;
+    }
+    nav a {
+        padding: 0px
+    }
+    nav ul li img {
+        margin-bottom: 0px;
+    }
+    /*SUBMENU*/
+    nav ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+    }
+    nav ul li ul li {
+        width: 90% !important;
+        display: block;
+    }
+    nav ul li ul li .toggle {
+        background-color: #d1d1d1;
+    }
+    nav ul li ul li:hover {
+        background: #CCC;
+    }
+    nav ul li ul li:hover .toggle {
+        background: #CCC;
+    }
+}

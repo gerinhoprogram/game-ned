@@ -1,0 +1,975 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+/* ===================================== REGIAO PADRAO */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@font-face {
+    font-family: "poppins-regular";
+    src: url('Poppins-Regular.ttf');
+}
+
+body,
+html {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6d6e70;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.colunas,
+.linhas {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: #6d6e70;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.wp {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 60px;
+    width: 60px;
+    z-index: 999;
+    position: fixed;
+}
+
+.wp img {
+    width: 100%;
+}
+
+iframe {
+    background-color: #d2ad5b;
+}
+
+h1 {
+    font-size: 23pt;
+    line-height: 24pt;
+    color: #fff;
+    text-align: center;
+    display: none;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 25pt;
+    line-height: 26pt;
+    color: #141f35;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 60px auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-family: 'poppins-regular';
+}
+
+h3 {
+    font-size: 12pt;
+    line-height: 17pt;
+    color: #141f35;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'poppins-regular';
+}
+
+h4 {
+    font-size: 22pt;
+    line-height: 23pt;
+    color: #141f35;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    color: #d2ad5b;
+    text-transform: uppercase;
+    font-size: 14pt;
+    line-height: 15pt;
+    margin-bottom: 7px;
+}
+
+h6 {
+    color: #141f35;
+    text-transform: uppercase;
+    font-size: 13pt;
+    line-height: 14pt;
+    font-weight: 500;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+ ::-webkit-input-placeholder,
+ :-moz-placeholder,
+ ::-moz-placeholder,
+ :-ms-input-placeholder {
+    color: #141f35;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type='text'],
+input[type='date'],
+input[type='email'],
+input[type='file'],
+textarea,
+select {
+    color: #141f35;
+    font-size: 12pt;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #d4d6dc;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    outline: 0pc;
+}
+
+textarea {
+    height: 130px;
+    resize: none;
+}
+
+button,
+.maps {
+    outline: 0pc;
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid black;
+}
+
+[type='submit'] {
+    background: #d2ad5b;
+    text-transform: uppercase;
+    color: #141f35;
+    cursor: pointer;
+    border: 1px solid #d2ad5b;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    height: 130px;
+    width: 100%;
+    font-weight: 800;
+    font-size: 14pt;
+}
+
+[type='submit']:hover {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    .wp {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        height: 50px;
+        width: 50px;
+        z-index: 999;
+        position: fixed;
+    }
+}
+
+
+/* FIM PADRAO */
+
+
+/* REGIAO TOPO */
+
+.linha-azul {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #141f35;
+}
+
+.linha-branca {
+    padding: 10px 0px 10px 0px;
+}
+
+.linha-branca .colunas {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.linha-branca i {
+    color: #d2ad5b
+}
+
+
+/* .linha-azul img {
+            max-width: 280px;
+        } */
+
+@media screen and (max-width: 810px) {
+    .linha-azul img {
+        max-width: 240px;
+    }
+    .linha-branca .colunas {
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .linha-azul .logo {
+        text-align: center;
+    }
+}
+
+
+/* FIM TOPO */
+
+
+/* REGIAO BANNER */
+
+.mySlides {
+    display: none;
+}
+
+.banner-container {
+    position: relative
+}
+
+.banner-home {
+    height: 50vh;
+    width: 100%;
+    background-color: #141f35;
+}
+
+.b1,
+.b2,
+.b3 {
+    background-size: cover;
+}
+
+.b1 {
+    background-image: url(../imagens/banner1.jpg);
+    background-position: center
+}
+
+.b2 {
+    background-image: url(../imagens/banner2.jpg);
+    background-position: left;
+}
+
+.b3 {
+    background-image: url(../imagens/banner3.jpg);
+    background-position: center
+}
+
+.w3-display-container {
+    position: relative
+}
+
+.w3-animate-opacity {
+    -webkit-animation: opac 0.8s;
+    animation: opac 0.8s
+}
+
+.progress {
+    height: 3px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.progress .progress-bar {
+    position: absolute;
+    height: 100%;
+    background-color: #141f35;
+    -webkit-animation: progress-animation 6s infinite;
+    animation: progress-animation 6s infinite;
+}
+
+@-webkit-keyframes progress-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes progress-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@-webkit-keyframes opac {
+    from {
+        opacity: 0.5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes opac {
+    from {
+        opacity: 0.5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.w3-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.w3-left,
+.w3-right {
+    cursor: pointer;
+    font-size: 30pt;
+    color: #ffff;
+}
+
+.w3-left {
+    float: left;
+    top: 100px;
+    margin-left: 15px;
+}
+
+.w3-right {
+    float: right;
+    top: 100px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        display: block;
+    }
+    .banner-home {
+        height: 300px;
+    }
+    .b1,
+    .b2,
+    .b3 {
+        background-color: #141f35;
+        padding: 80px 40px 30px 40px;
+        margin-top: -10px;
+        background-image: none;
+    }
+}
+
+
+/* FIM BANNER */
+
+
+/* REGIAO HOME */
+
+.home h2 {
+    text-align: center;
+}
+
+.texto-apoio {
+    color: #141f35;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.box {
+    -webkit-box-shadow: 9px 7px 5px rgba(189, 189, 189, 0.3), -1px -1px rgba(189, 189, 189, 0.3);
+    box-shadow: 9px 7px 5px rgba(189, 189, 189, 0.3), -1px -1px rgba(189, 189, 189, 0.3);
+    height: 320px;
+    width: 100%;
+    padding: 50px 25px 0px 25px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.icone-servico {
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.box .contabilidade {
+    background-image: url(../imagens/contabilidade-azul.png);
+}
+
+.box:hover .contabilidade {
+    background-image: url(../imagens/contabilidade-dourado.png);
+}
+
+.box .abertura {
+    background-image: url(../imagens/abertura-azul.png);
+}
+
+.box:hover .abertura {
+    background-image: url(../imagens/abertura-dourado.png);
+}
+
+.box .fiscais {
+    background-image: url(../imagens/fiscais-azul.png);
+}
+
+.box:hover .fiscais {
+    background-image: url(../imagens/fiscais-dourado.png);
+}
+
+.box .contabeis {
+    background-image: url(../imagens/contabeis-azul.png);
+}
+
+.box:hover .contabeis {
+    background-image: url(../imagens/contabeis-dourado.png);
+}
+
+.box button {
+    background-color: #d2ad5b;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    padding: 8px 10px 7px 10px;
+    position: absolute;
+    width: 190px;
+    bottom: -18px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 14pt;
+    color: #141f35;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border: solid 1px transparent;
+}
+
+.box p {
+    text-align: center;
+    font-size: 11pt;
+    line-height: 12pt;
+    color: #141f35
+}
+
+.box:hover {
+    -webkit-box-shadow: 9px 7px 5px rgba(189, 189, 189, 0.6), -1px -1px rgba(189, 189, 189, 0.6);
+    box-shadow: 9px 7px 5px rgba(189, 189, 189, 0.6), -1px -1px rgba(189, 189, 189, 0.6);
+    background-color: #141f35;
+}
+
+.box:hover p {
+    color: #ffff
+}
+
+.box:hover h3 {
+    color: #d2ad5b
+}
+
+.box:hover button {
+    opacity: 1;
+}
+
+
+/* FIM HOME */
+
+
+/* REGIAO FORMULARIO */
+
+.div-formulario {
+    margin-top: 80px;
+    background-image: url(../imagens/fundo-form.jpg);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.div-formulario2 {
+    background-image: none;
+    margin: 20px 0px 50px 0px;
+}
+
+.calculadora {
+    position: relative;
+    height: 400px;
+    padding: 0px !important;
+}
+
+.formulario label {
+    color: #141f35
+}
+
+.calculadora img {
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1240px) {
+    .calculadora img {
+        width: 400px
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .calculadora img {
+        width: 340px
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .calculadora img {
+        width: 200px
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .pr {
+        padding-right: 4px;
+    }
+    .pl {
+        padding-left: 4px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .calculadora {
+        display: none;
+    }
+    .div-formulario {
+        background-image: none;
+        background-color: #d4d6dc;
+    }
+}
+
+
+/* FIM FORMULARIO */
+
+
+/* REGIAO RODAPE */
+
+footer {
+    padding: 50px 0px 50px 0px;
+    background-color: #141f35;
+    margin-top: -25px;
+}
+
+footer p {
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 300;
+}
+
+footer .menu-rodape {
+    padding-left: 25px;
+}
+
+footer a:hover p {
+    color: #d2ad5b
+}
+
+.maps {
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    background-color: #d2ad5b;
+    color: #141f35;
+    font-size: 14pt;
+    margin-top: 15px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.contatos-rodape {
+    position: relative;
+}
+
+.mapa {
+    position: absolute;
+    width: 1%;
+    left: -800px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    top: 0px
+}
+
+.mapa iframe {
+    height: 0px;
+}
+
+.direitos-reservados {
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.direitos-reservados img {
+    position: absolute;
+    bottom: 0px;
+    right: 15%;
+    margin-top: 10px;
+}
+
+.caixa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: #fff;
+    width: 160px;
+}
+
+.caixa p {
+    color: #222;
+    cursor: pointer;
+    text-align: center;
+}
+
+.maps:hover {
+    background-color: #fff;
+}
+
+footer i {
+    color: #d2ad5b
+}
+
+@media screen and (max-width: 1020px) {
+    .divisor {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contatos-rodape {
+        margin-top: 30px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .direitos-reservados {
+        bottom: 35px;
+    }
+    .direitos-reservados img {
+        bottom: -35px;
+    }
+    .menus p {
+        padding: 10px;
+    }
+    p.menu-rodape {
+        padding-left: 20px;
+    }
+    p.redes-rodape {
+        padding-bottom: 20px;
+    }
+}
+
+
+/* FIM RODAPE */
+
+
+/* REGIAO SERVICOS */
+
+.banner-servicos {
+    height: 50vh;
+    width: 100%;
+    background-color: #141f35;
+    background-image: url(../imagens/banner-servicos.jpg);
+    background-size: cover;
+}
+
+.bloco-formulario {
+    background-color: #d2ad5b;
+    padding: 45px;
+    width: 80%;
+    margin: 65px auto;
+    position: relative;
+}
+
+.bloco-formulario input[type='submit'] {
+    position: absolute;
+    bottom: -20px;
+    border-radius: 30px;
+    height: 45px;
+    background-color: #141f35;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 70%;
+    color: #d2ad5b;
+    font-weight: 500;
+    padding-top: 6px;
+    border: #141f35 solid 1px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.bloco-formulario input[type='submit']:hover {
+    background-color: #fff;
+    color: #141f35
+}
+
+.bloco-formulario form {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pergunta {
+    text-transform: uppercase;
+    color: #d2ad5b;
+    font-size: 22pt;
+    line-height: 23pt;
+}
+
+.bloco-formulario label {
+    color: #fff
+}
+
+.bloco-conteudo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.accordions {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.accordion-item {
+    position: relative;
+}
+
+.accordion-item input {
+    display: none;
+}
+
+.accordion-item label {
+    display: block;
+    border: 1px solid #141f35;
+    background: #fff;
+    cursor: pointer;
+    padding: 10px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: #141f35;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.accordion-content {
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+    padding-left: 10px;
+}
+
+[id^=accordion]:checked~.accordion-content {
+    height: 30px;
+    padding: 5px 0px 10px 10px;
+    border-left: #141f35 1px solid;
+    border-right: #141f35 1px solid;
+    border-bottom: #141f35 1px solid;
+    line-height: 17pt;
+}
+
+
+/* .accordion-content:last-child {
+            border-bottom: #141f35 1px solid;
+        } */
+
+.accordion-content a {
+    color: #141f35;
+    margin-bottom: 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.accordion-content a:hover {
+    margin-left: 10px;
+}
+
+.seta {
+    border-top: 6px solid #141f35;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    right: 20px;
+    top: 20px
+}
+
+#accordion-1:checked~label .seta {
+    border-top: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #141f35;
+}
+
+#accordion-1:checked~label {
+    color: #141f35;
+}
+
+@media screen and (max-width: 800px) {
+    .bloco-formulario,
+    .bloco-conteudo,
+    .accordions {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .banner-servicos {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .bloco-formulario input[type='submit'] {
+        font-size: 10pt;
+    }
+    .bloco-formulario {
+        width: 100%;
+        padding: 35px;
+    }
+}
+
+
+/* FIM SERVICOS */
+
+
+/* =========================================================== JANELA */
+
+.janela {
+    font: 15px 'Avenir Next LT Pro Regular';
+    font-weight: 300;
+    color: #FFF;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    background-color: none;
+    padding: 30px;
+    border: none;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    z-index: 999999;
+}
+
+.janela input {
+    margin: 0 auto;
+    float: none;
+    display: table;
+}
+
+#mask {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 150;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 90;
+}
+
+.close_janela {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font: 26px Calibri;
+    cursor: pointer;
+    _cursor: hand;
+    color: #900;
+}
+
+.window {
+    display: none;
+    width: 600px;
+    height: 400px;
+    top: 10%;
+    position: fixed;
+    left: 0;
+    background: #FFF;
+    z-index: 9900;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#mascara {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #000;
+}
+
+.fechar {
+    display: block;
+    text-align: right;
+    color: #ef4e22;
+}

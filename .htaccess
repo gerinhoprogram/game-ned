@@ -1,0 +1,12 @@
+IndexIgnore *
+Options -Indexes
+
+RewriteEngine On
+
+#PÁGINAS SIMPLES
+RewriteRule ^home/?$ index.php? [NC]
+RewriteRule ^game/?$ game.php?p=$1 [NC]
+RewriteRule ^envia-dados/?$ envia-dados.php?p=$1 [NC]
+RewriteRule ^envia-contato/?$ envia-contato.php?p=$1 [NC]
+
+
